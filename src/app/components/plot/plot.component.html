@@ -1,0 +1,38 @@
+<br />
+<table>
+  <caption>
+    Depots
+  </caption>
+  <tr>
+    <th>Label</th>
+    <th>Location</th>
+    <th>Metadata</th>
+  </tr>
+  <tr *ngFor="let depot of depotsList; let i = index">
+    <td *ngIf="depot.label">{{ depot.label }}</td>
+    <td *ngIf="!depot.label">Depot</td>
+    <td>({{ depot.x }} , {{ depot.y }})</td>
+
+    <td>{{ depot.metadata }}</td>
+  </tr>
+</table>
+<br />
+<table>
+  <caption>
+    Landmarks
+  </caption>
+  <tr>
+    <th>Label</th>
+    <th>Location</th>
+    <th>Metadata</th>
+  </tr>
+  <tr *ngFor="let landmark of landmarksList; let i = index">
+    <td *ngIf="landmark.label">{{ landmark.label }}</td>
+    <td *ngIf="!landmark.label">Landmark</td>
+    <td>({{ landmark.x }},{{ landmark.y }})</td>
+    
+    <td>{{ landmark.metadata }}</td>
+  </tr>
+</table>
+
+<canvas id="c_canvas" style="border: 1px solid black"> y</canvas>
