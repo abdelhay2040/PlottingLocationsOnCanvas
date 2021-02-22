@@ -61,7 +61,7 @@ It also inherits its disadvantage of having to manage every detail manually. E.g
 
 ### How to display routes on the Canvas
 `Route`s will be introduced as a new object. If I am to plot routes, I would adopt having a list of points to be connected resulting in one route from `Depot1` to `Depot2`. For example, `Depot1` at `(5, 15)`, `Depot2` at `(15,2)`, and `Route` is defined as a `route` from `Depot1` to `Depot2` as follows:
-![](/images/image.png)
+![](route.png)
 ### Future Work
 * Adopt Point Class
 * Adopt routes between different depots
